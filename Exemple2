@@ -13,9 +13,11 @@ pipeline {
                 script {
                     def name = "${params.NAME}"
                     def gender = "${params.GENDER}"
+                    def skip = "${params.SKIP_TEST}"
+                    def choice = "${params.BRANCH}"
+                    def password = "${params.SONAR_SERVER_PWD}"
                   
-                    echo "Mrs. $name"
-                    echo "$ngender"
+                    echo "$name"
                     }
                 }
             }
